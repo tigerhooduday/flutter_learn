@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'Pages/home.dart';
 import 'Pages/login.dart';
 import 'Pages/mainpaga.dart';
+import 'Pages/trails.dart';
 import 'utils/routes.dart';
 
 void main() {
@@ -27,12 +28,13 @@ class Myapp extends StatelessWidget {
       //   primarySwatch: Colors.blue,
       //   visualDensity: VisualDensity.adaptivePlatformDensity,
       // ),
-      initialRoute: "/login",
+      initialRoute: "/",
       routes: {
         "/": (context) => LoginPage(),
         MyRoutes.loginRoute: (context) => LoginPage(),
         MyRoutes.homeRoute: (context) => Homepage(),
         "/emahila": (context) => Emahila(),
+        "/try": (context) => Trails(),
       },
     );
   }
